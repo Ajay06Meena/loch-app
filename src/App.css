@@ -1,3 +1,40 @@
+.bell-icon{
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  margin-right: 375px;
+}
+
+.eye-icon {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
 .App {
   text-align: center;
 }
