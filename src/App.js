@@ -1,13 +1,16 @@
 import "./App.css";
-import { Row, Col, Form, Input, Button, Carousel } from "antd";
+import { Row, Col, Form, Input, Button } from "antd";
 import { BellOutlined, EyeOutlined } from "@ant-design/icons";
 import Icon from "./assets/bluela2.svg";
 import carousel from "./assets/Frame.png";
+import carousel1 from "./assets/Frame1.png";
+import carousel2 from "./assets/Frame 2.png";
+
 // import carousel2 from "./assets/Frame2.png";
 import Cohorts from "./assets/Cohorts.png";
 import vector from "./assets/Vector1.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 function App() {
@@ -39,39 +42,56 @@ function App() {
             <Col xs={24} sm={24} md={10} lg={10} xl={10}>
               <BellOutlined className="bell-icon" />
               <h5
-                style={{
-                  color: "white",
-                  fontSize: "31px",
-                  textAlign: "left",
-                  margin: "0",
-                }}
+                className="notification-text"
               >
                 Get notified when a highly correlated whale makes a move
               </h5>
-              <p
-                style={{ color: "white", fontSize: "16px", textAlign: "left" }}
-              >
+              <p className="notification-para">
                 Find out when a certain whale moves more than any preset amount
                 on-chain or when a dormant whale you care about becomes active.
               </p>
             </Col>
             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-              <Carousel slidesToShow={1.5} autoplay>
+            <Swiper
+                slidesPerView={1.6}
+                spaceBetween={0}
+                
+                modules={[Autoplay]}                   
+            autoplay={{delay:1000}}                    
+            loop={true}
+                className="mySwiper1"
+              >
+                <SwiperSlide style={{marginRight:'-30px'}}>
                 <div>
                   <img
                     src={carousel}
                     alt="Carousel 1"
-                    style={{ width: "90%", height: "171px" }}
+                    className="frame"
                   />
                 </div>
+                </SwiperSlide>
+                <SwiperSlide>
                 <div>
                   <img
-                    src={carousel}
+                    src={carousel1}
                     alt="Carousel 2"
-                    style={{ width: "90%", height: "171px" }}
+                    className="frame"
+
                   />
                 </div>
-              </Carousel>
+                </SwiperSlide>
+                <SwiperSlide>
+                <div>
+                  <img
+                    src={carousel2}
+                    alt="Carousel 2"
+                    className="frame"
+
+                  />
+                </div>
+                </SwiperSlide>
+                
+              </Swiper>
             </Col>
           </Row>
 
@@ -80,28 +100,20 @@ function App() {
               <img
                 src={Cohorts}
                 alt="img"
-                style={{ width: "100%", height: "auto" }}
+                style={{ width: "100%", height: "auto", marginBottom: "12px" }}
               />
             </Col>
             <Col xs={24} sm={24} md={11} lg={11} xl={11}>
               <EyeOutlined className="eye-icon" />
               <h5
-                style={{
-                  color: "white",
-                  fontSize: "31px",
-                  textAlign: "right",
-                  margin: "0px 0px 12px 5px",
-                }}
+                className="heading"
+             
               >
                 Watch what the whales are doing
               </h5>
               <p
-                style={{
-                  color: "white",
-                  fontSize: "16px",
-                  textAlign: "right",
-                  marginLeft: "12px",
-                }}
+                className="para"
+                
               >
                 All whales are not equal. Know exactly what the whales impacting
                 YOUR portfolio are doing.
@@ -119,7 +131,7 @@ function App() {
               fontSize: "20px",
             }}
           >
-            <h1 style={{ color: "white" }}>Testimonials</h1>
+            <h1 className="testimonials-heading">Testimonials</h1>
           </Row>
           <Row style={{ marginBottom: "2rem" }}>
             <Col
@@ -148,7 +160,9 @@ function App() {
               >
                 <SwiperSlide>
                   <div style={{ textAlign: "left", padding: "9px" }}>
-                    <h5 style={{ margin: "0" }}>Jack F</h5>
+                    <h5 style={{ margin: "0" }}>
+                      Jack F <span className="frame-text">Ex Blackrock PM</span>
+                    </h5>
                     <p style={{ fontSize: "16px" }}>
                       “Love how Loch integrates portfolio analytics and whale
                       watching into one unified app.”
@@ -157,7 +171,12 @@ function App() {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div style={{ textAlign: "left", padding: "9px" }}>
-                    <h5 style={{ margin: "0" }}>Yash P</h5>
+                    <h5 style={{ margin: "0" }}>
+                      Yash P{" "}
+                      <span className="frame-text">
+                        Research, 3poch Crypto Hedge Fund
+                      </span>
+                    </h5>
                     <p style={{ fontSize: "16px" }}>
                       “Love how Loch integrates portfolio analytics and whale
                       watching into one unified app.”
@@ -166,7 +185,10 @@ function App() {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div style={{ textAlign: "left", padding: "9px" }}>
-                    <h5 style={{ margin: "0" }}>Smith F</h5>
+                    <h5 style={{ margin: "0" }}>
+                      Smith F{" "}
+                      <span className="frame-text">Co-Founder Magik Labs</span>
+                    </h5>
                     <p style={{ fontSize: "16px" }}>
                       “Love how Loch integrates portfolio analytics and whale
                       watching into one unified app.”
@@ -175,7 +197,9 @@ function App() {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div style={{ textAlign: "left", padding: "9px" }}>
-                    <h5 style={{ margin: "0" }}>Jon F</h5>
+                    <h5 style={{ margin: "0" }}>
+                      Jon F <span className="frame-text">Ex Blackrock PM</span>
+                    </h5>
                     <p style={{ fontSize: "16px" }}>
                       “Love how Loch integrates portfolio analytics and whale
                       watching into one unified app.”
@@ -184,7 +208,9 @@ function App() {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div style={{ textAlign: "left", padding: "9px" }}>
-                    <h5 style={{ margin: "0" }}>Jack F</h5>
+                    <h5 style={{ margin: "0" }}>
+                      Jack F <span className="frame-text">Ex Blackrock PM</span>
+                    </h5>
                     <p style={{ fontSize: "16px" }}>
                       “Love how Loch integrates portfolio analytics and whale
                       watching into one unified app.”

@@ -1,4 +1,83 @@
-.bell-icon{
+.frame{
+  width: 100%;
+  height: 195px;
+  margin-right: 25px;
+  object-fit: contain;
+}
+
+.notification-text {
+  color: white;
+  text-align: left;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  color: var(--Background---F2F2F2, #f2f2f2);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.notification-para {
+  text-align: left;
+  color: var(--Background---F2F2F2, #f2f2f2);
+  /* Body */
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  opacity: 0.7;
+}
+
+.heading {
+  color: var(--Background---F2F2F2, #f2f2f2);
+  text-align: right;
+  /* Heading 4 */
+  font-family: sans-serif;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  margin: 0px 0px 12px 5px;
+}
+
+.para {
+  color: var(--Background---F2F2F2, #f2f2f2);
+  text-align: right;
+  /* Body */
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  opacity: 0.7;
+  margin-left: 12px;
+}
+
+.testimonials-heading {
+  color: var(--Background---F2F2F2, #f2f2f2);
+  text-align: right;
+  /* Heading 5 */
+  font-family: sans-serif;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.frame-text{
+  color: var(--grey-400, #96979A);
+/* Caption */
+font-family: sans-serif;
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%;
+margin-left: 6px;
+}
+
+.bell-icon {
   color: white;
   font-size: 2rem;
   margin-bottom: 0.5rem;
@@ -9,14 +88,18 @@
   color: white;
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: right;
 }
-
+.mySwiper1 .swiper-slide{
+  margin-right: -20px;
+}
 .swiper {
   width: 100%;
   height: 100%;
 }
 
-.swiper-slide {
+.mySwiper .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -26,14 +109,12 @@
   align-items: center;
 }
 
-.swiper-slide img {
+.mySwiper .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-
 
 .App {
   text-align: center;
