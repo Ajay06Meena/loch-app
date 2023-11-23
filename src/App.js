@@ -41,9 +41,7 @@ function App() {
           >
             <Col xs={24} sm={24} md={10} lg={10} xl={10}>
               <BellOutlined className="bell-icon" />
-              <h5
-                className="notification-text"
-              >
+              <h5 className="notification-text">
                 Get notified when a highly correlated whale makes a move
               </h5>
               <p className="notification-para">
@@ -52,45 +50,29 @@ function App() {
               </p>
             </Col>
             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-            <Swiper
+              <Swiper
                 slidesPerView={1.6}
                 spaceBetween={0}
-                
-                modules={[Autoplay]}                   
-            autoplay={{delay:1000}}                    
-            loop={true}
+                modules={[Autoplay]}
+                autoplay={{ delay: 1000 }}
+                loop={true}
                 className="mySwiper1"
               >
-                <SwiperSlide style={{marginRight:'-30px'}}>
-                <div>
-                  <img
-                    src={carousel}
-                    alt="Carousel 1"
-                    className="frame"
-                  />
-                </div>
+                <SwiperSlide>
+                  <div>
+                    <img src={carousel} alt="Carousel 1" className="frame" />
+                  </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div>
-                  <img
-                    src={carousel1}
-                    alt="Carousel 2"
-                    className="frame"
-
-                  />
-                </div>
+                  <div>
+                    <img src={carousel1} alt="Carousel 2" className="frame" />
+                  </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div>
-                  <img
-                    src={carousel2}
-                    alt="Carousel 2"
-                    className="frame"
-
-                  />
-                </div>
+                  <div>
+                    <img src={carousel2} alt="Carousel 3" className="frame" />
+                  </div>
                 </SwiperSlide>
-                
               </Swiper>
             </Col>
           </Row>
@@ -105,16 +87,8 @@ function App() {
             </Col>
             <Col xs={24} sm={24} md={11} lg={11} xl={11}>
               <EyeOutlined className="eye-icon" />
-              <h5
-                className="heading"
-             
-              >
-                Watch what the whales are doing
-              </h5>
-              <p
-                className="para"
-                
-              >
+              <h5 className="heading">Watch what the whales are doing</h5>
+              <p className="para">
                 All whales are not equal. Know exactly what the whales impacting
                 YOUR portfolio are doing.
               </p>
